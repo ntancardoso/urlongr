@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Lakki+Reddy');
+body {
+    background: #000;
+}
+
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: #999;
+    color: rgba(255, 255, 255, .8);
+}
+
+.content {
+    z-index: 1020;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.main-content {
+    min-height: 80%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.longify-form {
+    input[type="text"] {
+        appearance: none;
+        box-shadow: none;
+        border-radius: none;
+        padding: 10px;
+        border: solid 1px #dcdcdc;
+        transition: box-shadow 0.3s, border 0.3s;
+    }
+    input[type="text"]:focus,
+    input[type="text"].focus {
+        outline: none;
+        border: solid 1px #707070;
+        box-shadow: 0 0 5px 1px #969696;
+    }
+}
+
+#newUrl {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Sets the maximum height of the modal body to 90% of the screen height*/
+
+#newUrlModal {
+    .modal-body {
+        height: 60vh;
+        padding: 0;
+    }
+}
+
+.btn-secondary {
+    color: #DDD;
+    background-color: #888;
+}
+
+
+/* Navbar */
+
+.navbar-brand {
+    font-family: 'Lakki Reddy', cursive;
+}
+
+
+/* Title */
+
+.navbar-default {
+    background: transparent;
+    background-image: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.navbar-default .navbar-brand {
+    color: #EEE;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #FFF;
+}
+
+
+/* Link */
+
+.navbar-default .navbar-nav>li>a {
+    color: #DDD;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #FFF;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #CCC;
+    background-color: #E7E7E7;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #CCC;
+    background-color: #D5D5D5;
+}
+
+
+/* Mobile version */
+
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+        color: #333;
+    }
+}

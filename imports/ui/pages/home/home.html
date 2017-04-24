@@ -1,0 +1,30 @@
+<template name="App_home">
+    <div class="homepage-hero-module">
+        <div class="video-container">
+
+            <div class="content">
+                <div class="container">
+                    {{> navbar}}
+                    <div class="main-content">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                {{> longify}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter"></div>
+            <video autoplay loop class="fillWidth">
+                <source src="/assets/background/MP4/Under.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                <source src="/assets/background/WEBM/Under.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+            <div class="poster hidden">
+                <img src="/assets/background/SnapShots/Under.jpg" alt="">
+            </div>
+            {{> newUrlModal}}
+            {{> footer}}
+        </div>
+    </div>
+    {{> scripts}}
+</template>
